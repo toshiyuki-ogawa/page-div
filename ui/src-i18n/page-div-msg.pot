@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Toshiyuki Ogawa
+# This file is distributed under the same license as the page-div package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: page-div 0.0.1\n"
+"Report-Msgid-Bugs-To: info@oc-soft.net\n"
+"POT-Creation-Date: 2026-04-13 08:51+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:35
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:39
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:33
+msgid "Update"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:38
+msgid "Address files"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:46
+msgid "Postal Code"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:47
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:55
+msgid "Address"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:48
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:64
+msgid "Organization"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:49
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:73
+msgid "Role"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:50
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:82
+msgid "Name"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:44
+msgid "Margin top"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:49
+msgid "Margin bottom"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:54
+msgid "Margin left"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:59
+msgid "Margin right"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:64
+msgid "Gap Columns"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:69
+msgid "Gap Rows"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:74
+msgid "Count of Rows"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:79
+msgid "Count of Columns"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:84
+msgid "Grid line width"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:38
+msgid "Item"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:39
+msgid "Location X"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:40
+msgid "Location Y"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:41
+msgid "Font size"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:46
+msgid "Postal code"
+msgstr ""

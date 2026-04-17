@@ -1,0 +1,6 @@
+PROJECT_ROOT=${script_dir}/..
+SRC_DIR=src
+COPYRIGHT='Toshiyuki Ogawa'
+PACKAGE_NAME=page-div
+PACKAGE_VERSION=0.0.1
+MSGID_BUGS_ADDRESS=info@oc-soft.net
