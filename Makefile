@@ -10,8 +10,9 @@ docroot-fonts: docroot/fonts/NotoSansJP-Regular.ttf
 .PHONY: docroot-fonts
 
 # copy page division appllication entry
-docroot/page-div.html: ui/dist/index.html ui-dist-index-html
+docroot/page-div.html: ui/dist/index.html
 	rm -r -f $(@D)/assets
+	mkdir -p $(@D)
 	cp $< $@
 	cp -r $(<D)/assets $(@D)
 
@@ -28,6 +29,8 @@ ui-dist-index-html:
 	$(MAKE) -C ui dist/index.html
 
 .PHONY: ui-dist-index-html
+
+ui/dist/index.html: ui-dist-index-html
 
 # create i18n json files
 dist-i18n-json:
