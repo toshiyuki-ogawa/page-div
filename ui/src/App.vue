@@ -60,16 +60,18 @@ watch(pageSetting, (newValue)=> {
   startUpdateDataUrl()
 })
 
-
+const generatorSettingTitle = getDomainText('page-div', 'Generator Setting')
+const postalSettingTitle = getDomainText('page-div', 'Postal Setting')
+const addressSettingTitle = getDomainText('page-div', 'Address Setting')
 </script>
 <template>
-  <Disclosure :title="getDomainText('page-div', 'Generator Setting')">
+  <Disclosure :title="generatorSettingTitle">
     <PageGeneratorSetting v-model="pageSetting" />
   </Disclosure>
-  <Disclosure :title="getDomainText('page-div', 'Postal Setting')">
+  <Disclosure :title="postalSettingTitle">
     <PostalSetting v-model="postalSetting" />
   </Disclosure>
-  <DisclosureAddress :title="getDomainText('page-div', 'Address Setting')"
+  <DisclosureAddress :title="addressSettingTitle"
     v-model="addresses"/>
 
   <embed 

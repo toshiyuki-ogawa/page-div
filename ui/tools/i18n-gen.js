@@ -147,12 +147,12 @@ async function mainProc(options) {
         try {
           const stat = await fs.stat(outputDir)
           dirExists = stat.isDirectory()
-          doProcess = dirExists
         } catch (err) {
         }
-        if (doProcess && !dirExists) {
+        if (!dirExists) {
           try {
             dirExists = await fs.mkdir(outputDir, { recursive: true })
+            doProcess = dirExists
           } catch (err) {
           }
         }

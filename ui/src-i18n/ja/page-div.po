@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: page-div 0.0.1\n"
 "Report-Msgid-Bugs-To: info@oc-soft.net\n"
-"POT-Creation-Date: 2026-04-13 08:51+0900\n"
-"PO-Revision-Date: 2026-04-13 09:16+0900\n"
+"POT-Creation-Date: 2026-04-18 11:13+0900\n"
+"PO-Revision-Date: 2026-04-18 11:25+0900\n"
 "Last-Translator: Toshiyuki Ogawa <toshiyuki.ogawa.2.71@gmail.com>\n"
 "Language-Team: ja <info@oc-soft.net>\n"
 "Language: \n"
@@ -17,92 +17,104 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:35
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:39
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:33
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:35
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:39
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:33
 msgid "Update"
 msgstr "更新"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:38
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:38
 msgid "Address files"
 msgstr "住所一覧ファイル"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:46
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:46
 msgid "Postal Code"
 msgstr "郵便番号"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:47
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:55
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:47
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:55
 msgid "Address"
 msgstr "住所"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:48
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:64
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:48
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:64
 msgid "Organization"
 msgstr "組織"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:49
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:73
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:49
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:73
 msgid "Role"
 msgstr "役職"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:50
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:82
+#: /home/toshiyuki/projects/page-div/ui/src/Address.vue:50
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:82
 msgid "Name"
 msgstr "名前"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:44
+#: /home/toshiyuki/projects/page-div/ui/src/App.vue:63
+msgid "Generator Setting"
+msgstr "生成設定"
+
+#: /home/toshiyuki/projects/page-div/ui/src/App.vue:64
+msgid "Postal Setting"
+msgstr "宛先設定"
+
+#: /home/toshiyuki/projects/page-div/ui/src/App.vue:65
+msgid "Address Setting"
+msgstr "住所設定"
+
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:44
 msgid "Margin top"
 msgstr "マージン上"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:49
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:49
 msgid "Margin bottom"
 msgstr "マージン下"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:54
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:54
 msgid "Margin left"
 msgstr "マージン左"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:59
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:59
 msgid "Margin right"
 msgstr "マージン右"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:64
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:64
 msgid "Gap Columns"
 msgstr "列間隔"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:69
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:69
 msgid "Gap Rows"
 msgstr "行間隔"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:74
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:74
 msgid "Count of Rows"
 msgstr "行数"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:79
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:79
 msgid "Count of Columns"
 msgstr "列数"
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:84
+#: /home/toshiyuki/projects/page-div/ui/src/PageGeneratorSetting.vue:84
 msgid "Grid line width"
 msgstr "グリッド線幅"
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:38
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:38
 msgid "Item"
 msgstr "項目"
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:39
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:39
 msgid "Location X"
 msgstr "位置X"
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:40
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:40
 msgid "Location Y"
 msgstr "位置Y"
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:41
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:41
 msgid "Font size"
 msgstr "フォントサイズ"
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:46
+#: /home/toshiyuki/projects/page-div/ui/src/PostalSetting.vue:46
 msgid "Postal code"
 msgstr "郵便番号"
