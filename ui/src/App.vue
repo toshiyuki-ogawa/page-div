@@ -46,7 +46,15 @@ function startUpdateDataUrl(): void {
   })()
 }
 
+/**
+ * update window title
+ */
+function updateWindowTitle(): void {
+  document.title = getDomainText('page-div', 'Divide Page')
+}
+
 onBeforeMount(startUpdateDataUrl) 
+onBeforeMount(updateWindowTitle)
 
 watch(addresses, (newValue) => {
   startUpdateDataUrl()
