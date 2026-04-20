@@ -66,33 +66,43 @@ const addressSettingTitle = getDomainText('page-div', 'Address Setting')
 const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
 </script>
 <template>
-  <div class="operation-container">
-    <Disclosure :title="generatorSettingTitle">
-      <PageGeneratorSetting v-model="pageSetting" />
-    </Disclosure>
-    <Disclosure :title="postalSettingTitle">
-      <PostalSetting v-model="postalSetting" />
-    </Disclosure>
-    <DisclosureAddress :title="addressSettingTitle"
-      v-model="addresses"/>
-    <div v-if="dataUrl">
-      <a
-        class="download-link"
-        :download="downloadFileName"
-        :href="dataUrl" >
-        {{ getDomainText('page-div', 'Download') }}
-      </a>
+  <div class="base">
+    <div class="operation-container">
+      <Disclosure :title="generatorSettingTitle">
+        <PageGeneratorSetting v-model="pageSetting" />
+      </Disclosure>
+      <Disclosure :title="postalSettingTitle">
+        <PostalSetting v-model="postalSetting" />
+      </Disclosure>
+      <DisclosureAddress :title="addressSettingTitle"
+        v-model="addresses"/>
+    </div>
+    <div>
+      <div v-if="dataUrl" class="download">
+        <a
+          class="download-link"
+          :download="downloadFileName"
+          :href="dataUrl" >
+          {{ getDomainText('page-div', 'Download') }}
+        </a>
+      </div>
+      <div v-if="dataUrl" class="preview-container">
+       <embed 
+          type="application/pdf"
+          :src="dataUrl"
+          class="preview"/>
+      </div>
     </div>
   </div>
-  <div v-if="dataUrl" class="preview-container">
-    <embed 
-      type="application/pdf"
-      :src="dataUrl"
-      class="preview"/>
-    </div>
 </template>
 <style scoped>
 
+
+.base {
+  display: block flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
 
 .operation-container {
   margin-top: 0.5em;
@@ -105,9 +115,15 @@ const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
   width: 620px;
 }
 
+.download {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
 .preview {
   width: 600px;
   height: calc(600px * 1.5); 
+  display: block;
 }
 
 
@@ -140,7 +156,6 @@ const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
     height: calc(400px * 1.5);
   }
 }
-
 
 </style>
 <!-- vi: se ts=2 sw=2 et: -->
