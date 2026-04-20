@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: page-div 0.0.1\n"
 "Report-Msgid-Bugs-To: info@oc-soft.net\n"
-"POT-Creation-Date: 2026-04-13 08:51+0900\n"
+"POT-Creation-Date: 2026-04-20 07:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,119 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:35
+#: /home/toshi/projects/page-div/ui/src/App.vue:63
+msgid "Division Setting"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/App.vue:64
+msgid "Postal Setting"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/App.vue:65
+msgid "Address Setting"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/App.vue:66
+msgid "CardsInPage.pdf"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/App.vue:83
+msgid "Download"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Address.vue:55
 #: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:39
 #: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:33
 msgid "Update"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:38
+#: /home/toshi/projects/page-div/ui/src/Address.vue:58
 msgid "Address files"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:46
+#: /home/toshi/projects/page-div/ui/src/Address.vue:66
+#: /home/toshi/projects/page-div/ui/src/Address.vue:83
 msgid "Postal Code"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:47
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:55
+#: /home/toshi/projects/page-div/ui/src/Address.vue:68
+#: /home/toshi/projects/page-div/ui/src/Address.vue:84
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:71
 msgid "Address"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:48
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:64
+#: /home/toshi/projects/page-div/ui/src/Address.vue:70
+#: /home/toshi/projects/page-div/ui/src/Address.vue:85
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:89
 msgid "Organization"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:49
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:73
+#: /home/toshi/projects/page-div/ui/src/Address.vue:72
+#: /home/toshi/projects/page-div/ui/src/Address.vue:86
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:107
 msgid "Role"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/Address.vue:50
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:82
+#: /home/toshi/projects/page-div/ui/src/Address.vue:74
+#: /home/toshi/projects/page-div/ui/src/Address.vue:87
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:124
 msgid "Name"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:44
+#: /home/toshi/projects/page-div/ui/src/Address.vue:76
+#: /home/toshi/projects/page-div/ui/src/Address.vue:88
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:139
+msgid "Digest"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:45
 msgid "Margin top"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:49
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:57
 msgid "Margin bottom"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:54
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:69
 msgid "Margin left"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:59
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:81
 msgid "Margin right"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:64
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:93
 msgid "Gap Columns"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:69
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:105
 msgid "Gap Rows"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:74
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:116
 msgid "Count of Rows"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:79
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:128
 msgid "Count of Columns"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:84
+#: /home/toshi/projects/page-div/ui/src/PageGeneratorSetting.vue:140
 msgid "Grid line width"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:38
-msgid "Item"
-msgstr ""
-
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:39
-msgid "Location X"
-msgstr ""
-
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:40
-msgid "Location Y"
-msgstr ""
-
 #: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:41
+msgid "Loc X"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:44
+msgid "Loc Y"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:47
 msgid "Font size"
 msgstr ""
 
-#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:46
+#: /home/toshi/projects/page-div/ui/src/PostalSetting.vue:53
 msgid "Postal code"
 msgstr ""

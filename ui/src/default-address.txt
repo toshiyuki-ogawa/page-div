@@ -1,2 +1,2 @@
-〒000-0000,XXXX県XXXX市XXXX区XXXX-XXX-X,XXX株式会社,営業部長,"山田 太郎 様"
-〒000-0000,YYYY県YYYY市YYYY区YYYY-YYY-Y,YYY株式会社,総務課長,"佐藤 ひろし 様"
+〒000-0000,XXXX県XXXX市XXXX区XXXX-XXX-X,XXX株式会社,営業部長,"山田 太郎 様","領収書在中"
+〒000-0000,YYYY県YYYY市YYYY区YYYY-YYY-Y,YYY株式会社,総務課長,"佐藤 ひろし 様","領収書在中"

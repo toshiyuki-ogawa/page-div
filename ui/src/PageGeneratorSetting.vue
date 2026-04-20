@@ -38,54 +38,115 @@ function handleToSetupMargin(event: SubmitEvent) {
     <div>
       <button>{{ getDomainText('page-div', 'Update') }}</button>
     </div>
-    <table>
+    <table class="number-input-table">
       <tbody>
         <tr>
-          <th>{{ getDomainText('page-div', 'Margin top') }}</th>
-          <td><input type="number"
-            :value="model.topMargin" name="topMargin" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Margin top') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.topMargin"
+              name="topMargin" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Margin bottom') }}</th>
-          <td><input type="number"
-            :value="model.bottomMargin" name="bottomMargin" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Margin bottom') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.bottomMargin"
+              name="bottomMargin" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Margin left') }}</th>
-          <td><input type="number"
-            :value="model.leftMargin" name="leftMargin" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Margin left') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.leftMargin"
+              name="leftMargin" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Margin right') }}</th>
-          <td><input type="number"
-            :value="model.rightMargin" name="rightMargin" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Margin right') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.rightMargin"
+              name="rightMargin" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Gap Columns') }}</th>
-          <td><input type="number"
-            :value="model.columnGap" name="columnGap" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Gap Columns') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.columnGap"
+              name="columnGap" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Gap Rows') }}</th>
-          <td><input type="number"
-            :value="model.rowGap" name="rowGap" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Gap Rows') }}
+          </th>
+          <td>
+            <input type="number"
+              class="number-input" 
+              :value="model.rowGap" 
+              name="rowGap" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Count of Rows') }}</th>
-          <td><input type="number"
-            :value="model.rowsCount" name="rowsCount" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Count of Rows') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.rowsCount"
+              name="rowsCount" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Count of Columns') }}</th>
-          <td><input type="number"
-            :value="model.columnsCount" name="columnsCount" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Count of Columns') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.columnsCount"
+              name="columnsCount" />
+          </td>
         </tr>
         <tr>
-          <th>{{ getDomainText('page-div', 'Grid line width') }}</th>
-          <td><input type="number"
-            :value="model.gridLineWidth"
-            name="gridLineWidth"
-            step="0.001" /></td>
+          <th>
+            {{ getDomainText('page-div', 'Grid line width') }}
+          </th>
+          <td>
+            <input
+              type="number"
+              class="number-input" 
+              :value="model.gridLineWidth"
+              name="gridLineWidth"
+              step="0.001" />
+          </td>
         </tr>
       </tbody>
     </table>
@@ -94,5 +155,14 @@ function handleToSetupMargin(event: SubmitEvent) {
 
 <style scoped>
 
+.number-input-table tbody th {
+  text-align: left;
+}
+
+
+.number-input {
+  width: 80px;
+  text-align: right;
+}
 </style>
 <!-- vi: se ts=2 sw=2 et: -->

@@ -32,60 +32,123 @@ function handleToSetupLocSize(event: SubmitEvent) {
     <div>
       <button>{{ getDomainText('page-div', 'Update') }}</button>
     </div>
-    <table>
-      <thead>
+    <table class="number-input-table">
+     <thead>
         <tr>
-          <th>{{ getDomainText('page-div', 'Item') }}</th>
-          <th>{{ getDomainText('page-div', 'Location X') }}</th>
-          <th>{{ getDomainText('page-div', 'Location Y') }}</th>
-          <th>{{ getDomainText('page-div', 'Font size') }}</th>
+          <th>
+          </th>
+          <th>
+            {{ getDomainText('page-div', 'Loc X') }}
+          </th>
+          <th>
+            {{ getDomainText('page-div', 'Loc Y') }}
+          </th>
+          <th>
+            {{ getDomainText('page-div', 'Font size') }}
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th>{{ getDomainText('page-div', 'Postal code') }}</th>
-          <td><input type="number" :value="model.codeLocationX"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.codeLocationX"
               name="codeLocationX" /></td>
-          <td><input type="number" :value="model.codeLocationY"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.codeLocationY"
               name="codeLocationY" /></td>
-          <td><input type="number" :value="model.codeFontSize"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.codeFontSize"
               name="codeFontSize" /></td>
         </tr>
         <tr>
           <th>{{ getDomainText('page-div', 'Address') }}</th>
-          <td><input type="number" :value="model.addressLocationX"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.addressLocationX"
               name="addressLocationX" /></td>
-          <td><input type="number" :value="model.addressLocationY"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.addressLocationY"
               name="addressLocationY" /></td>
-          <td><input type="number" :value="model.addressFontSize"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.addressFontSize"
               name="addressFontSize" /></td>
         </tr>
         <tr>
           <th>{{ getDomainText('page-div', 'Organization') }}</th>
-          <td><input type="number" :value="model.organizationLocationX"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.organizationLocationX"
               name="organizationLocationX" /></td>
-          <td><input type="number" :value="model.organizationLocationY"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.organizationLocationY"
               name="organizationLocationY" /></td>
-          <td><input type="number" :value="model.organizationFontSize"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.organizationFontSize"
               name="organizationFontSize" /></td>
         </tr>
         <tr>
           <th>{{ getDomainText('page-div', 'Role') }}</th>
-          <td><input type="number" :value="model.roleLocationX"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.roleLocationX"
               name="roleLocationX" /></td>
-          <td><input type="number" :value="model.roleLocationY"
+          <td><input
+              class="number-input"
+              type="number"
+              :value="model.roleLocationY"
               name="roleLocationY" /></td>
-          <td><input type="number" :value="model.roleFontSize"
+          <td><input type="number"
+              class="number-input"
+              :value="model.roleFontSize"
               name="roleFontSize" /></td>
         </tr>
         <tr>
           <th>{{ getDomainText('page-div', 'Name') }}</th>
-          <td><input type="number" :value="model.nameLocationX"
+          <td><input type="number"
+              class="number-input"
+              :value="model.nameLocationX"
               name="nameLocationX" /></td>
-          <td><input type="number" :value="model.nameLocationY"
+          <td><input type="number"
+              class="number-input"
+              :value="model.nameLocationY"
               name="nameLocationY" /></td>
-          <td><input type="number" :value="model.nameFontSize"
+          <td><input type="number"
+              class="number-input"
+              :value="model.nameFontSize"
               name="nameFontSize" /></td>
+        </tr>
+        <tr>
+          <th>{{ getDomainText('page-div', 'Digest') }}</th>
+          <td><input type="number"
+              class="number-input"
+              :value="model.digestLocationX"
+              name="digestLocationX" /></td>
+          <td><input type="number"
+              class="number-input"
+              :value="model.digestLocationY"
+              name="digestLocationY" /></td>
+          <td><input type="number"
+              class="number-input"
+              :value="model.digestFontSize"
+              name="digestFontSize" /></td>
         </tr>
       </tbody>
     </table>
@@ -93,6 +156,20 @@ function handleToSetupLocSize(event: SubmitEvent) {
 </template>
 
 <style scoped>
+
+.number-input-table thead th {
+  text-align: right;
+}
+
+
+.number-input-table tbody th {
+  text-align: left;
+}
+
+.number-input {
+  width: 80px;
+  text-align: right;
+}
 
 </style>
 <!-- vi: se ts=2 sw=2 et: -->

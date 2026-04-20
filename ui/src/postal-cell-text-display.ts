@@ -14,15 +14,15 @@ export function createCellTextDisplayFromAddress(
   const settingNames = getOrderNames()
 
   const textDisplays = [] as TextDisplay[]
-    if (settingNames.length <= userAddress.length) {
     settingNames.forEach((name, idx) => {
-      const locFontSize  = locFontSizeMap[name]!
+    const locFontSize  = locFontSizeMap[name]!
+    if (userAddress[idx]) {
       textDisplays.push({
         ...locFontSize,
-        value: userAddress[idx]! 
+        value: userAddress[idx]
       })
-    })
-  }
+    }
+  })
   return {
     textDisplays
   }

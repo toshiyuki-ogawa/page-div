@@ -12,14 +12,17 @@ export function getPostalSettingDefault(): PostalSettingProperties {
     addressLocationY: 12,
     addressFontSize: 10,
     organizationLocationX: 5,
-    organizationLocationY: 24,
+    organizationLocationY: 22,
     organizationFontSize: 10,
     roleLocationX: 5,
-    roleLocationY: 30,
+    roleLocationY: 28,
     roleFontSize: 10,
     nameLocationX: 5,
-    nameLocationY: 40,
-    nameFontSize: 12
+    nameLocationY: 36,
+    nameFontSize: 12,
+    digestLocationX: 30,
+    digestLocationY: 42,
+    digestFontSize: 10
   }
 }
 

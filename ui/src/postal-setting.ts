@@ -16,6 +16,9 @@ export type PostalSetting = {
   nameLocationX?: number
   nameLocationY?: number
   nameFontSize?: number
+  digestLocationX?: number
+  digestLocationY?: number
+  digestFontSize?: number
 }
 
 const namesList = [
@@ -48,6 +51,12 @@ const namesList = [
     'nameLocationY',
     'nameFontSize',
     'name'
+  ],
+  [
+    'digestLocationX',
+    'digestLocationY',
+    'digestFontSize',
+    'digest'
   ]
 ] as string[][]
 
