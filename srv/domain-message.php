@@ -6,7 +6,8 @@ $message_file = $_REQUEST['message'];
 
 if ($lang_list && $message_file) {
 
-    $file = find_message_file($lang_list, 'domain-message', $message_file);
+    $file = find_message_file($lang_list, 
+        implode('/', [__DIR__, 'domain-message']), $message_file);
     if ($file) {
         header('Content-Length: ' . filesize($file));
         http_response_code(200);

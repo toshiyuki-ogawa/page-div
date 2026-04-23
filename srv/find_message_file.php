@@ -13,8 +13,7 @@ function find_message_file($lang_list, $message_dir, $message_file) {
             }
             $search_dirs[] = $lang_subtags[0];
             foreach ($search_dirs as $dir) {
-                $file = implode('/', [$_SERVER['DOCUMENT_ROOT'],
-                    $message_dir, $dir, $message_file]);
+                $file = implode('/', [$message_dir, $dir, $message_file]);
                 error_log($file);
                 if (file_exists($file)) {
                     $result = $file;
