@@ -14,7 +14,10 @@ docroot/page-div.html: ui/dist/index.html
 	rm -r -f $(@D)/assets
 	mkdir -p $(@D)
 	cp $< $@
+	cp $(<D)/*.svg $(@D)
 	cp -r $(<D)/assets $(@D)
+
+
 
 # copy domain message
 docroot-domain-message: dist-i18n-json
