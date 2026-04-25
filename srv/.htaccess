@@ -1,0 +1,10 @@
+
+RewriteEngine On
+
+RewriteRule ^index\.html - [L]
+RewriteCond %{REQUEST_URI} .+\.html$  
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule . index.html [L]
+
+
+# vi: se ts=4 sw=4 et:

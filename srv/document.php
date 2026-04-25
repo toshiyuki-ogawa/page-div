@@ -1,13 +1,21 @@
 <?php
+
 require_once './find_l10n_file.php';
 
 $lang_list = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
-$message_file = $_REQUEST['message'];
+$doc_file = $_REQUEST['doc'];
 
-if ($lang_list && $message_file) {
+if ($lang_list && $doc_file) {
 
     $file = find_l10n_file($lang_list, 
-        implode('/', [__DIR__, 'domain-message']), $message_file);
+        implode('/', [ __DIR__, 'docs']), $doc_file);
+    if (!$file) {
+        $default_file = implode('/',
+            [ __DIR__, 'docs', 'defaults', $doc_file ]);
+        if (file_exists($default_file)) {
+            $file = $default_file;
+        }
+    }
     if ($file) {
         header('Content-Length: ' . filesize($file));
         http_response_code(200);

@@ -15,6 +15,8 @@ coverage
 *.local
 *~
 *.swp
+dist-i18n/
+domain-message/
 
 # Editor directories and files
 .vscode/*

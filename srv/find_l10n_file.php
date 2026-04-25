@@ -1,7 +1,7 @@
 <?php
 require_once './accept_languages.php';
 
-function find_message_file($lang_list, $message_dir, $message_file) {
+function find_l10n_file($lang_list, $message_dir, $message_file) {
     $result = false;
     foreach (iterate_languages($lang_list) as $langs) {
         foreach ($langs as $lang) {
@@ -14,7 +14,6 @@ function find_message_file($lang_list, $message_dir, $message_file) {
             $search_dirs[] = $lang_subtags[0];
             foreach ($search_dirs as $dir) {
                 $file = implode('/', [$message_dir, $dir, $message_file]);
-                error_log($file);
                 if (file_exists($file)) {
                     $result = $file;
                     break;

@@ -15,13 +15,16 @@ import PageGeneratorSetting from './PageGeneratorSetting.vue'
 import PostalSetting from './PostalSetting.vue'
 import DisclosureAddress from './DisclosureAddress.vue'
 import Disclosure from './Disclosure.vue'
+import { getAppRoot } from './app-root'
 import { ref, watch, onBeforeMount } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const dataUrl = ref('')
 
 const pageSetting = ref<PageGeneratorProperties>(getPageGeneratorDefault())
 const postalSetting = ref<PostalSettingProperites>(getPostalSettingDefault())
 const addresses = ref<string[][]>(getDefaultAddressList())
+const rootPath = ref<string | null>(null)
 
 /**
  * update dataUrl
@@ -53,8 +56,18 @@ function updateWindowTitle(): void {
   document.title = getDomainText('page-div', 'Divide Page')
 }
 
+/**
+ * start load root
+ */
+function startLoadRoot(): void {
+  (async () => {
+    rootPath.value = await getAppRoot()
+  })()
+}
+
 onBeforeMount(startUpdateDataUrl) 
 onBeforeMount(updateWindowTitle)
+onBeforeMount(startLoadRoot)
 
 watch(addresses, (newValue) => {
   startUpdateDataUrl()
@@ -74,6 +87,11 @@ const addressSettingTitle = getDomainText('page-div', 'Address Setting')
 const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
 </script>
 <template>
+  <nav class="header" v-if="rootPath">
+    <RouterLink class="contents" :to="`${rootPath}index.html`">
+      {{ getDomainText('index', 'Go to About') }}
+    </RouterLink>
+  </nav>
   <div class="base">
     <div class="operation-container">
       <Disclosure :title="generatorSettingTitle">
@@ -105,6 +123,11 @@ const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
 </template>
 <style scoped>
 
+.header {
+  display: block flex;
+  margin: 0.25em 0.5em;
+  justify-content: end;
+}
 
 .base {
   display: block flex;
@@ -164,6 +187,5 @@ const downloadFileName = getDomainText('page-div', 'CardsInPage.pdf')
     height: calc(400px * 1.5);
   }
 }
-
 </style>
 <!-- vi: se ts=2 sw=2 et: -->

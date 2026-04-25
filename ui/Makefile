@@ -1,7 +1,9 @@
 
-dist-18n-jsons = dist-i18n/ja/page-div.json
+dist-18n-jsons = dist-i18n/ja/page-div.json \
+	dist-i18n/ja/index.json
 
-src-i18n-jsons = src-i18n/ja/page-div.po
+src-i18n-jsons = src-i18n/ja/page-div.po \
+	src-i18n/ja/index.po
 
 
 index_html_sources = $(wildcard src/*)

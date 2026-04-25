@@ -14,7 +14,9 @@
     "rm-dist-i18n": "node tools/fsrm.js -r dist-i18n"
   },
   "dependencies": {
-    "vue": "^3.5.31"
+    "marked": "^18.0.2",
+    "vue": "^3.5.31",
+    "vue-router": "^5.0.6"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",

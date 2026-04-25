@@ -1,0 +1,26 @@
+# index translation mapping 
+# Copyright (C) 2026 Toshiyuki Ogawa
+# This file is distributed under the same license as the page-div package.
+# Toshiyuki Ogawa<info@oc-soft.net>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: page-div 0.0.1\n"
+"Report-Msgid-Bugs-To: info@oc-soft.net\n"
+"POT-Creation-Date: 2026-04-25 17:27+0900\n"
+"PO-Revision-Date: 2026-04-25 17:+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/toshi/projects/page-div/ui/src/PageDiv.vue:92
+msgid "Go to About"
+msgstr ""
+
+#: /home/toshi/projects/page-div/ui/src/Index.vue:19
+msgid "Go to Page Division"
+msgstr ""
